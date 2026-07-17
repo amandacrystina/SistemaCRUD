@@ -46,7 +46,7 @@
             //adicionamos Maria na lista de clientes
             clientesLista.Add(cliente);
 
-            return clientesLista;
+            return clientesLista.OrderByDescending(t=>t.Nome).ToList();
         }
     }
 }
