@@ -1,7 +1,15 @@
-﻿namespace CadastroClientes.Models.Repository
+﻿using Newtonsoft.Json;
+using System.Security.Cryptography.X509Certificates;
+
+namespace CadastroClientes.Models.Repository
 {
     public class ClientesRepository
     {
+        public void Salvar(Clientes clientes)
+        {
+            string clientesTexto = JsonConvert.SerializeObject(clientes) + "," + Environment.NewLine;
+            File.AppendAllText("C:\\projetos-pessoais\\MeuProjetoCRUD\\Database\\bancodados.txt", clientesTexto);
+        }
         public List<Clientes> Listar()
         {
             List<Clientes> clientesLista = new List<Clientes>(); 

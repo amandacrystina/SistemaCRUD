@@ -1,0 +1,2 @@
+{"idCliente":0,"Documento":"11111","Nome":"Agg","Sexo":"FEMININO","Email":"amandaa@amanda","Telefone":"155555","Fax":"11551515151","UF":"DF"},
+{"idCliente":0,"Documento":"1111111","Nome":"Dani","Sexo":"MASCULINO","Email":"dani@gmail.com","Telefone":"11155555","Fax":"1116668484","UF":"SP"},
